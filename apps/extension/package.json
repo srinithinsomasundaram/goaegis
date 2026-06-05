@@ -16,7 +16,6 @@
   "main": "./dist/apps/extension/src/extension.js",
   "files": [
     "dist/**",
-    "media/**",
     "README.md",
     "package.json"
   ],
@@ -36,8 +35,7 @@
       "activitybar": [
         {
           "id": "goaegis",
-          "title": "GoAegis",
-          "icon": "media/goaegis.svg"
+          "title": "GoAegis"
         }
       ]
     },

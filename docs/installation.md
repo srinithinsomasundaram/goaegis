@@ -60,6 +60,21 @@ To install the packaged extension in VS Code:
 
 For production, set the same variables in Railway or your deployment platform rather than checking in `.env.production`.
 
+## Server Deployment
+
+If you want to run the backend and landing page on a single server, use the Docker Compose stack in `infrastructure/docker/docker-compose.yml`.
+
+1. Copy `infrastructure/docker/.env.example` to `infrastructure/docker/.env`.
+2. Fill in the secrets for Postgres, Gemini, and GitHub.
+3. Start the stack:
+
+```bash
+npm run deploy:server
+```
+
+The landing page will be on port `80`, the health endpoint at `/health`, and the API under `/api/v1`.
+For the VS Code extension, set `GOAEGIS_API_BASE_URL` to the server root, not to `/api/v1`.
+
 ## First Run
 
 1. Open a file with a known vulnerability.

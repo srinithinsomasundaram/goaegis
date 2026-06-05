@@ -13,6 +13,8 @@
     "check": "npm run check --workspaces",
     "test": "npm run test --workspaces",
     "dev:backend": "bash ./scripts/dev-backend.sh",
+    "deploy:server": "docker compose --env-file infrastructure/docker/.env -f infrastructure/docker/docker-compose.yml up -d --build",
+    "deploy:server:down": "docker compose --env-file infrastructure/docker/.env -f infrastructure/docker/docker-compose.yml down",
     "package:extension": "npm run package --workspace goaegis-extension"
   }
 }
