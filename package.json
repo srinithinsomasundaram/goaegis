@@ -13,6 +13,6 @@
     "check": "npm run check --workspaces",
     "test": "npm run test --workspaces",
     "dev:backend": "bash ./scripts/dev-backend.sh",
-    "package:extension": "npm run package --workspace @goaegis/extension"
+    "package:extension": "npm run package --workspace goaegis-extension"
   }
 }

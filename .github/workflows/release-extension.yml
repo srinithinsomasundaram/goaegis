@@ -28,7 +28,7 @@ jobs:
         run: npm run build
 
       - name: Package extension
-        run: npm run package --workspace @goaegis/extension
+        run: npm run package --workspace goaegis-extension
 
       - name: Upload VSIX artifact
         uses: actions/upload-artifact@v4

@@ -12,7 +12,7 @@ mkdirSync(releaseDir, { recursive: true });
 
 const result = spawnSync(
   "npx",
-  ["--yes", "@vscode/vsce", "package", "--out", outputPath],
+  ["--yes", "@vscode/vsce", "package", "--out", outputPath, "--allow-missing-repository", "--no-dependencies"],
   {
     cwd: extensionDir,
     stdio: "inherit",

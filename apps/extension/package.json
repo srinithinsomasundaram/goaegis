@@ -1,5 +1,5 @@
 {
-  "name": "@goaegis/extension",
+  "name": "goaegis-extension",
   "displayName": "GoAegis",
   "description": "AI security scanning, review, and remediation for VS Code.",
   "version": "0.1.0",
@@ -13,8 +13,13 @@
     "AI",
     "Other"
   ],
-  "icon": "media/goaegis.svg",
   "main": "./dist/apps/extension/src/extension.js",
+  "files": [
+    "dist/**",
+    "media/**",
+    "README.md",
+    "package.json"
+  ],
   "activationEvents": [
     "onCommand:goaegis.saveAndScan",
     "onCommand:goaegis.scanWorkspace",
